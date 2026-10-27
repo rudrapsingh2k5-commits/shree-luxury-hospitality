@@ -1,0 +1,14 @@
+{
+  "name": "shree-hospitality",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && node src/server.js",
+    "dev:client": "cd client && npx vite",
+    "admin:create": "cd server && node src/scripts/createAdmin.js",
+    "test:server": "cd server && npm test",
+    "build:client": "cd client && npx vite build",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  }
+}

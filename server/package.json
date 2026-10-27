@@ -1,0 +1,31 @@
+{
+  "name": "shree-server",
+  "version": "1.0.0",
+  "description": "SHREE श्री Luxury Hospitality Backend API - Express, Mongoose, Stripe",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "admin:create": "node src/scripts/createAdmin.js",
+    "test": "node --test --test-concurrency=1 src/__tests__/api.test.js src/__tests__/security_and_concurrency.test.js src/__tests__/auth_and_provisioning.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "nodemailer": "^6.10.0",
+    "stripe": "^23.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.7"
+  }
+}
